@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-wine-bg: #F5F5F7;
+  --color-wine-surface: #FFFFFF;
+  --color-wine-surface2: #E5E5E7;
+  --color-wine-border: #E5E5E7;
+  --color-wine-text: #1D1D1F;
+  --color-wine-dim: #86868B;
+  --color-wine-faint: #B0B0B5;
+  --color-wine-gold: #0071E3;
+  --color-wine-green: #34C759;
+  --color-wine-green-dim: #A3E2A3;
+  --color-wine-amber: #FF9500;
+  --color-wine-amber-dim: #FFD29D;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", sans-serif;
+  --font-mono: "Inter", ui-monospace, monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-wine-bg);
+    color: var(--color-wine-text);
+    font-family: var(--font-sans);
+  }
+
+  /* Custom scrollbar matching the clean theme */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-wine-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-wine-border);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-wine-dim);
+  }
+}
+
+

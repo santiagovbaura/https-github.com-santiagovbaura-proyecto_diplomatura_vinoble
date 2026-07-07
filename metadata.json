@@ -1,0 +1,6 @@
+{
+  "name": "Control de Vinos",
+  "description": "Sistema para el control de stock de vinos y el seguimiento de entregas a clientes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
